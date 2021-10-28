@@ -1,16 +1,13 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Privacy Policy
+subtitle: Discover more about the data we collect
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Bluetooth ToolKit takes care of your data. This is what we collect:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- Nothing
 
-What else do you need?
+### Want to know more?
 
-### My story
-
-To be honest, I'm having some trouble remembering right now, so wh
+Really? We don't collect any data about you and your devices nor we store it locally or somewhere else nor we pass it to third parties. You can trust in us, your data will never leave your device.
