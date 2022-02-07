@@ -11,3 +11,5 @@ Bluetooth ToolKit takes care of your data. This is what we collect:
 ### Want to know more?
 
 Really? We don't collect any data about you and your devices nor we store it locally or somewhere else nor we pass it to third parties. You can trust in us, your data will never leave your device.
+
+V1.0.1
