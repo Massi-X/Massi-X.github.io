@@ -5,3 +5,20 @@ html {
 body{
     background-color: #bbdefb;
 }
+
+
+/* elements */
+.bubble {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.9);
+    border-radius: 0.3em;
+    background-color: #fff;
+    padding: 10px;
+    margin: 40px;
+}
+.bubble > img {
+    width: 100%;
+    margin: 10px 0;
+}
+.bubble > span {
+    color: #757575;
+}
