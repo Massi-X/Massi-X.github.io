@@ -1,3 +1,17 @@
+@font-face {
+  font-family: RobotoSerif;
+  src: url(/assets/fonts/RobotoSerif-VariableFont_GRAD\,opsz\,wdth\,wght.ttf);
+}
+@font-face {
+  font-family: RobotoSerif;
+  src: url(/assets/fonts/RobotoSerif-Italic-VariableFont_GRAD\,opsz\,wdth\,wght.ttf);
+  font-style: italic;
+}
+
+html {
+    font-family: RobotoSerif;
+}
+
 body{
     background-color: #bbdefb;
 }
