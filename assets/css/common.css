@@ -2,7 +2,6 @@ body{
     background-color: #bbdefb;
 }
 
-
 /* elements */
 .bubble-container {
     display: flex;
@@ -15,12 +14,12 @@ body{
     background-color: #fff;
     padding: 10px;
     margin: 40px;
-    width: 33%; /*TODO: adaptive width media queires*/
+    width: 33vw; /*TODO: adaptive width media queires*/
 }
 .bubble > img {
     width: 100%;
     margin: 10px 0;
-    border-radius: 0.2em;
+    border-radius: 0.3em;
 }
 .bubble > span {
     color: #757575;
