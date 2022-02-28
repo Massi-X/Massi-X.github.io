@@ -9,13 +9,10 @@
 }
 
 /*TODO: dark theme*/
-* {
-    margin: 0;
-    border-collapse: collapse;
-}
-
 html {
     font-family: RobotoSerif;
+    margin: 0;
+    border-collapse: collapse;
 }
 
 body{
@@ -35,18 +32,24 @@ header {
 }
 header > ul {
     list-style: none;
-    display: block;
+    display: flex;
     float: right;
 }
 header > ul > li {
     float: left;
-    padding: 0 5px;
 }
 header > ul > li > a {
     display: inline-block;
     height: 100%;
+    padding: 0 5px;
     color: #4b636e;
 }
+header > ul > li > a:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
 header > ul > li > a:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
@@ -55,7 +58,7 @@ header > ul > li > a:focus {
 }
 
 /* content */
-.main-content {
+#main-content {
     margin-top: 50px;
 }
 
