@@ -9,6 +9,10 @@
 }
 
 /*TODO: dark theme*/
+* {
+    margin: 0;
+    border-collapse: collapse;
+}
 
 html {
     font-family: RobotoSerif;
@@ -19,12 +23,15 @@ body{
 }
 a, a:visited {
     color: #1976d2;
+    text-decoration: none;
 }
 
 /* header menu */
 header {
     background-color: #fff;
+    position: fixed;
     width: 100vw;
+    height: 50px;
 }
 header > ul {
     list-style: none;
@@ -33,6 +40,7 @@ header > ul {
 }
 header > ul > li {
     float: left;
+    padding: 0 5px;
 }
 header > ul > li > a {
     display: inline-block;
@@ -44,6 +52,11 @@ header > ul > li > a:hover {
 }
 header > ul > li > a:focus {
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* content */
+.main-content {
+    margin-top: 50px;
 }
 
 /* elements */
