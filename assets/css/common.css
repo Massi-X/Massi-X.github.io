@@ -8,12 +8,42 @@
   font-style: italic;
 }
 
+/*TODO: dark theme*/
+
 html {
     font-family: RobotoSerif;
 }
 
 body{
     background-color: #bbdefb;
+}
+a, a:visited {
+    color: #1976d2;
+}
+
+/* header menu */
+header {
+    background-color: #fff;
+    width: 100vw;
+}
+header > ul {
+    list-style: none;
+    display: block;
+    float: right;
+}
+header > ul > li {
+    float: left;
+}
+header > ul > li > a {
+    display: inline-block;
+    height: 100%;
+    color: #4b636e;
+}
+header > ul > li > a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+header > ul > li > a:focus {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* elements */
@@ -32,7 +62,7 @@ body{
 }
 .bubble > img {
     width: 100%;
-    margin: 10px 0;
+    margin-bottom: 10px;
     border-radius: 0.3em;
 }
 .bubble > span {
