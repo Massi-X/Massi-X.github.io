@@ -93,16 +93,18 @@ header > #menu-container > ul > li > a:focus {
     margin: 25px 0;
 }
 .bubble {
-    box-shadow: 0px 0px 15px -4px rgb(0 0 0 / 22%);
-    border-radius: 2em;
-    background-color: #fff;
-    padding: 10px;
     width: 32%; /*TODO: adaptive width media queires*/
+    perspective: 40px;
 }
 .bubble > .perspective {
     display: flex;
     flex-direction: row;
     align-items: center;
+    border-radius: 2em;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px -4px rgb(0 0 0 / 22%);
+    transition: transform 0.5s;
 }
 .bubble > .perspective > img {
     width: 45%;
