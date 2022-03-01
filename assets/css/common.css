@@ -97,10 +97,12 @@ header > #menu-container > ul > li > a:focus {
     border-radius: 2em;
     background-color: #fff;
     padding: 10px;
-    width: 32%;
+    width: 32%; /*TODO: adaptive width media queires*/
+}
+.bubble > .perspective {
     display: flex;
     flex-direction: row;
-    align-items: center; /*TODO: adaptive width media queires*/
+    align-items: center;
 }
 .bubble > .perspective > img {
     width: 45%;
