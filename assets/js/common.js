@@ -34,7 +34,7 @@ document.querySelectorAll('.bubble').forEach(function(elem) {
     }
 
     // Track the mouse position relative to the center of the container.
-    mouse.setOrigin(container);
+    mouse.setOrigin(elem);
     
     elem.onmouseenter = function(event) {
         update(event);
