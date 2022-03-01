@@ -1,6 +1,6 @@
 //Animate bubbles
 document.querySelectorAll('.bubble').forEach(function(elem) {
-    var inner = elem.firstChild;
+    var inner = elem.children[0];
     var counter = 0;
     var updateRate = 10;
 
@@ -45,14 +45,14 @@ document.querySelectorAll('.bubble').forEach(function(elem) {
     // Track the mouse position relative to the center of the container.
     mouse.setOrigin(elem);
     
-    elem.onmouseenter = function(event) {
-        update(event);
-    };
-    elem.onmouseleave = function() {
+    elem.addEventListener("mouseenter", e => {
+        update(e);
+    });
+    elem.addEventListener("mouseleave", e => {
         inner.style = "";
-    };
-    elem.onmousemove = function(event) {
+    });
+    elem.addEventListener("mousemove", e => {
         if (isTimeToUpdate())
-            update(event);
-    };
+            update(e);
+    });
 });
