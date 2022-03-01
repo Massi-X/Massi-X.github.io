@@ -81,6 +81,7 @@ header > #menu-container > ul > li > a:focus {
 }
 #main-content {
     margin-top: 50px;
+    padding: 20px 10px;
 }
 
 /* elements */
@@ -101,14 +102,14 @@ header > #menu-container > ul > li > a:focus {
     flex-direction: row;
     align-items: center; /*TODO: adaptive width media queires*/
 }
-.bubble > img {
+.bubble > .perspective > img {
     width: 45%;
     border-radius: 2em;
 }
-.bubble > .text {
+.bubble > .perspective > .text {
     color: #000;
     padding-left: 10px;
 }
-.bubble > .text > span {
+.bubble > .perspective > .text > span {
     color: #757575;
 }
