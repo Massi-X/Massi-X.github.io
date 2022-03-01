@@ -10,6 +10,7 @@
 
 /*TODO: dark theme*/
 * {
+    color: #000;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,44 +19,58 @@ html {
     font-family: RobotoSerif;
 }
 body{
-    background-color: #bbdefb;
+    background-color: #ede7f6;
 }
 a, a:visited {
     color: #1976d2;
     text-decoration: none;
 }
+h1, h2, h3, h4 {
+    font-weight: bold;
+}
+h1 {
+    margin-bottom: 10px;
+}
+p, h2, h3, h4 {
+    margin-bottom: 5px;
+}
+span {
+    padding-bottom: 5px;
+}
 
 /* header menu */
 header {
-    background-color: #fff;
     position: fixed;
     top: 0;
     width: 100vw;
     height: 50px;
+    background-color: rgba(255 255 255 / 50%);
+    border-bottom: 1px solid rgba(0 0 0 / 5%);
+    backdrop-filter: blur(10px);
 }
-header > ul {
+header > #menu-container > ul {
     list-style: none;
     float: right;
 }
-header > ul > li {
+header > #menu-container > ul > li {
     float: left;
 }
-header > ul > li > a {
+header > #menu-container > ul > li > a {
     display: inline-block;
     height: 100%;
     padding: 0 5px;
     color: #4b636e;
 }
-header > ul > li > a:before {
+header > #menu-container > ul > li > a:before {
     content: "";
     display: inline-block;
     height: 100%;
     vertical-align: middle;
   }
-header > ul > li > a:hover {
+header > #menu-container > ul > li > a:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
-header > ul > li > a:focus {
+header > #menu-container > ul > li > a:focus {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -72,21 +87,28 @@ header > ul > li > a:focus {
 .bubble-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: stretch;
+    margin: 25px 0;
 }
 .bubble {
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.9);
-    border-radius: 0.3em;
+    box-shadow: 0px 0px 15px -4px rgb(0 0 0 / 22%);
+    border-radius: 2em;
     background-color: #fff;
     padding: 10px;
-    width: 30%; /*TODO: adaptive width media queires*/
+    width: 32%;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /*TODO: adaptive width media queires*/
 }
 .bubble > img {
-    width: 100%;
-    margin-bottom: 10px;
-    border-radius: 0.3em;
+    width: 45%;
+    border-radius: 2em;
 }
-.bubble > span {
+.bubble > .text {
+    color: #000;
+    padding-left: 10px;
+}
+.bubble > .text > span {
     color: #757575;
 }
