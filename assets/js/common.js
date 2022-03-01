@@ -16,6 +16,15 @@ document.querySelectorAll('.bubble').forEach(function(elem) {
         );
     };
 
+    var updateTransformStyle = function(x, y) {
+        var style = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
+        inner.style.transform = style;
+        inner.style.webkitTransform = style;
+        inner.style.mozTransform = style;
+        inner.style.msTransform = style;
+        inner.style.oTransform = style;
+    };
+
     var mouse = {
         _x: 0,
         _y: 0,
@@ -47,12 +56,3 @@ document.querySelectorAll('.bubble').forEach(function(elem) {
             update(event);
     };
 });
-
-var updateTransformStyle = function(x, y) {
-    var style = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
-    inner.style.transform = style;
-    inner.style.webkitTransform = style;
-    inner.style.mozTransform = style;
-    inner.style.msTransform = style;
-    inner.style.oTransform = style;
-};
