@@ -1,9 +1,21 @@
 <head>
     <meta charset="utf-8">
-    <!-- TODO: favicon-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
     <title>{{ page.title }}</title>
-    <meta name="description" content="{{page.description }}">
+    <meta name="description" content="{{page.description}}">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+
+    <link rel="manifest" href="/manifest.json">
+    {% if page.theme_color And page.theme_color != "" And page.theme_color != nil %}
+        <meta name="theme-color" content="#{{page.theme_color}}">
+    {% endif %}
+
     <link rel="stylesheet" href="/assets/css/common.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/assets/js/common.js" async></script>
