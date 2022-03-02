@@ -1,5 +1,7 @@
 {
  "name": "Massi-X Official DevSite",
+ "start_url": "/",
+ "display": "standalone",
  "icons": [
   {
    "src": "\/assets\/images\/android-icon-192x192.png",
