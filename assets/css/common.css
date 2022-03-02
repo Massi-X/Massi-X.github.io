@@ -74,6 +74,11 @@ header > #menu-container > ul > li > a:hover {
 header > #menu-container > ul > li > a:focus {
     background-color: rgba(0, 0, 0, 0.2);
 }
+header > #menu-container > ul > li img {
+    height: 100%;
+    padding: 10px 10px 10px 0;
+    vertical-align: middle;
+}
 
 /* content */
 .max-width {
