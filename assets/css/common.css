@@ -22,7 +22,7 @@ html {
     user-select: none;
 }
 body{
-    background-color: #ede7f6;
+    background-color: #eceff1;
     overflow-x: hidden;
 }
 a, a:visited {
@@ -146,7 +146,7 @@ header > #menu-container > ul > li img {
     color: #757575;
 }
 .bubble > .perspective > .text > p.fake-link {
-    color: #757575;
+    color: #2196f3;
 }
 
 @media screen and (max-width: 768px) {
