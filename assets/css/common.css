@@ -65,7 +65,7 @@ header > #menu-container > ul > li > a {
 header > #menu-container > ul > li > a.action-button {
     border-radius: 0.5em;
     border: 1px solid #9e9e9e;
-    height: auto !important;
+    height: 42.5px;
     margin: 2.5px 0 0 5px;
 }
 header > #menu-container > ul > li > a:before {
@@ -81,7 +81,7 @@ header > #menu-container > ul > li > a:focus {
     background-color: rgba(0, 0, 0, 0.2);
 }
 header > #menu-container > ul > li img {
-    height: 40px;
+    height: 100%;
     padding: 5px 5px 5px 0;
     vertical-align: middle;
 }
