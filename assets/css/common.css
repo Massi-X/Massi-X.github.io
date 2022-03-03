@@ -14,12 +14,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 html {
     font-family: RobotoSerif;
+    overflow-x: hidden;
+    user-select: none;
 }
 body{
     background-color: #ede7f6;
+    overflow-x: hidden;
 }
 a, a:visited {
     color: #1976d2;
@@ -32,10 +36,15 @@ h1 {
     margin-bottom: 10px;
 }
 p, h2, h3, h4 {
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 span {
-    padding-bottom: 5px;
+    padding-bottom: 6px;
+}
+h1.main-title {
+    font-size: 50px;
+    color: #039be5;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 10%);
 }
 
 /* header menu */
@@ -45,6 +54,7 @@ header {
     z-index: 999;
     width: 100vw;
     height: 50px;
+    padding: 0 10px;
     background-color: rgba(255 255 255 / 50%);
     border-bottom: 1px solid rgba(0 0 0 / 5%);
     backdrop-filter: blur(10px);
@@ -73,9 +83,14 @@ header > #menu-container > ul > li > a:before {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
-  }
-header > #menu-container > ul > li > a:hover {
+}
+header > #menu-container > ul > li > a:active {
     background-color: rgba(0, 0, 0, 0.1);
+}
+@media (hover: hover) {
+    header > #menu-container > ul > li > a:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
 }
 header > #menu-container > ul > li > a:focus {
     background-color: rgba(0, 0, 0, 0.2);
@@ -102,11 +117,12 @@ header > #menu-container > ul > li img {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: stretch;
-    margin: 25px 0;
+    margin-bottom: 25px;
 }
 .bubble {
     width: 32%; /*TODO: adaptive width media queires*/
     perspective: 40px;
+    margin: 10px 0;
 }
 .bubble > .perspective {
     display: flex;
@@ -126,6 +142,19 @@ header > #menu-container > ul > li img {
     color: #000;
     padding-left: 10px;
 }
-.bubble > .perspective > .text > span {
+.bubble > .perspective > .text > p {
     color: #757575;
 }
+.bubble > .perspective > .text > p.fake-link {
+    color: #757575;
+}
+
+@media screen and (max-width: 768px) {
+    .bubble {
+        width: 100%;
+    }
+    .bubble > .perspective > img {
+        width: 35%;
+    }
+  }
+  
